@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+{% block title %}Navbar{% endblock %}
+
+{% block content %}
+<header class="main-header">
+        
+    <nav class="navbar navbar-static-top">
+
+        <div class="navbar-main">
+          
+          <div class="container">
+
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+
+              </button>
+              
+              <a class="navbar-brand" href="#"></a>
+              
+            </div>
+
+            <div id="navbar" class="navbar-collapse collapse pull-left">
+                
+              <ul class="nav navbar-nav">
+                  
+                      <li><a href="{% url 'Accueil' %}" class="is-active"><strong><i class="fa fa-home"></i> Accuiel</strong></a></li>
+                    <li><a href="{% url 'Gestion_utilisateur' %}"><strong><i class="fa fa-users"></i> Utilisateurs</strong></a></li>
+                    <li><a href="{% url 'Statistique' %}"><strong><i class="fa fa-bar-chart"></i> Statistiques</strong></a></li>
+                    
+             
+              </ul>
+
+            </div> <!-- /#navbar -->
+
+          </div> <!-- /.container -->
+          
+        </div> <!-- /.navbar-main -->
+
+
+    </nav> 
+
+</header> <!-- /. main-header -->
+{% endblock %}

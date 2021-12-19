@@ -3,7 +3,52 @@
 {% block title %}Accueil page{% endblock %}
 
 {% block content %}
-<h1> Ma page d'accueil</h1>
+{% include './navbar.html' %}
+    <div class="container">
+
+        <div class="row fadeIn animated">
+
+<!----------------------------------- Page-Accueil ------------------------------------------>
+       <div  class="page_1">
+       
+        <div style="margin-top: 30px; margin-left: 10%; margin-right: 2%; margin-bottom: 30px;">
+         <form>
+            
+            <center>
+                <h2><i class="fa fa-home"></i> Bienvenue sur l'interface d'administration.</h2>
+                <p>
+                    
+              <br/>
+              </p>
+
+         
+            <span class="btn btn-success" style="margin-top: 0px; width: 35%"  id="connecter"> <i class="fa fa-users"></i>
+           <a href="utilisateurs.html">gestion des utilisateurs</a></span>
+            </center>
+        </form>
+         <br/>
+        </div>
+      
+  <!-----------------------------------/ Page-Accueil ------------------------------------------>
+
+  <br>	
+            </div>
+
+    </div> 
+
+</div>
+
+
+<footer class="main-footer">
+
+    <div class="footer-bottom">
+
+        <div class="container text-center" style="height: 60px; padding: 20px; font-weight: bold;">
+            @ Copyrights 2021 UQAR
+        </div>
+    </div>
+    
+</footer>
 
 
 

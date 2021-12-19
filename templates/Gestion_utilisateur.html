@@ -1,0 +1,83 @@
+{% extends 'base.html' %}
+
+{% block title %}Gestion Utilisateurs{% endblock %}
+
+{% block content %}
+{% include './navbar.html' %}
+    
+
+<div class="container">
+
+    <div class="row fadeIn animated">
+
+<!----------------------------------- Page-Utilisateurs ------------------------------------------>
+   <div  class="page_1_users">
+    <div style="margin-top: 30px; margin-left: 10%; margin-right: 2%; margin-bottom: 30px;">
+     <form>
+       
+        <center>
+            <h2><i class="fa fa-users"></i> Gestion des utilisateurs</h2>
+            <br/>
+
+      <select name="difficulte" style="width: 30%; height: 37px; margin-top: 5px; border: 1px solid #ccc; color:#595959; padding-left: 4px;margin-bottom:10px; float: right;margin-right: 48px;" id="difficulte">
+            <option>Sélectionner profil</option>
+            <option value="Locateurs">Locateurs</option>
+            <option value="Locataires">Locataires</option>
+        </select>
+        <br/>
+        <table style="margin-left: -90px; width:100%">
+           <tr style="background:#eee">
+            <th>ID</th>
+            <th>Adresse e-mail</th>
+            <th>Profil</th>
+              <th>Dernière utilisation</th>
+              <th>Actions</th>
+          </tr>
+          <tr>
+            <td>#</td>
+            
+            <td>#</td>
+            <td>#</td>
+             <td>#</td>
+             <td>
+                  <span class="btn btn-success" style="margin-top: 0px; width: 49%; float: letf; margin-right:2% ;"  id="connecter"> <i class="fa fa-edit"></i>
+       <a href="{% url 'reinitialisation' %}">Réinitialiser</a></span>
+
+       <span class="btn btn-danger" style="margin-top: 0px; width: 49%; float: right;"  id="connecter"> <i class="fa fa-trash"></i>
+       <a href="#">Supprimer</a></span>
+             </td>
+             
+
+          </tr>
+        </table>
+        <br/>
+        <span class="btn btn-success" style="margin-top: 0px; width: 30%; float: right;margin-right: 48px;"  id="connecter"> <i class="fa fa-user"></i>
+       <a href="{% url 'Addusers' %}">Ajouter</a></span>
+        </center>
+    </form>
+     <br/>
+    </div>
+<!-----------------------------------/ Page-Utilisateurs ------------------------------------------>
+
+<br>	
+        </div>
+
+</div> 
+
+</div>
+
+
+<footer class="main-footer">
+
+<div class="footer-bottom">
+
+    <div class="container text-center" style="height: 60px; padding: 20px; font-weight: bold;">
+        @ Copyrights 2021 UQAR
+    </div>
+</div>
+
+</footer>
+
+
+
+{% endblock %}

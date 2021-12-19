@@ -1,0 +1,79 @@
+{% extends 'base.html' %}
+
+{% block title %}Add users{% endblock %}
+
+{% block content %}
+{% include './navbar.html' %}
+
+<div class="container">
+
+    <div class="row fadeIn animated">
+
+<!----------------------------------- Page-Nouvel utilisateur ------------------------------------------>
+
+    <div  class="page_2_reinitialisation">
+    <div style="margin-top: 30px; margin-left: 10%; margin-right: 2%; margin-bottom: 30px">
+<center>
+            <h2><i class="fa fa-user"></i> Nouvel utilisateur</h2>
+          <br/> 
+     
+        </center>
+        <form>
+            <label style="width: 25%">Adresse e-mail :</label>
+            <input type="email" name="email" style="width: 50%; height: 37px; margin-top: 5px; margin-bottom:10px" id="password" placeholder="Adresse e-mail" />
+            <br/>
+            <label style="width: 25%">Profil :</label>
+                <select name="difficulte" style="width: 50%; height: 37px; margin-top: 5px; border: 1px solid #ccc; color:#595959; padding-left: 4px;margin-bottom:10px" id="difficulte" >
+            <option>Sélectionner profil</option>
+            <option value="Locateurs">Locateurs</option>
+            <option value="Locataires">Locataires.</option>
+        </select>
+         
+         <br/>
+        <label style="width: 25%">Mot de passe  :</label>
+        
+        <input type="text" name="password" style="width: 50%; height: 37px; margin-top: 5px; margin-bottom:10px" id="password" placeholder="Mot de passe" />
+        <br/>
+        <label style="width: 25%">Confirmation :</label>
+       
+        <input type="text" name="cpassword" style="width: 50%; height: 37px; margin-top: 5px; margin-bottom:10px" id="cpassword" placeholder="Confirmationn de mot de passe" />
+         
+        <br/>
+      
+       
+        <br/>
+        <center>
+        <button  type="reset" class="btn btn-danger" style="margin-top: 0px; width: 35%" id="retour">
+        <i class="fa fa-users"></i> Retour</button>
+     
+        <span class="btn btn-success" style="margin-top: 0px; width: 35%"  id="valider"> <i class="fa fa-plus"></i> Ajouter</span>
+        </center>
+    </form>
+     <br/> 
+
+    </div>
+</div>
+<!-----------------------------------/ Page-Nouvel utilisateur ------------------------------------------>
+
+<br>	
+        </div>
+
+</div> 
+
+</div>
+
+
+<footer class="main-footer">
+
+<div class="footer-bottom">
+
+    <div class="container text-center" style="height: 60px; padding: 20px; font-weight: bold;">
+        @ Copyrights 2021 UQAR
+    </div>
+</div>
+
+</footer>
+
+
+
+{% endblock %}

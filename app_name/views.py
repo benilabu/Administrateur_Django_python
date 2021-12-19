@@ -9,3 +9,12 @@ def Accueil(request):
 
 def Gestion_utilisateur(request):
     return render(request, "Gestion_utilisateur.html")
+
+def Statistique(request):
+    return render(request,"Statistique.html")
+
+def Addusers(request):
+    return render(request,"Addusers.html")
+
+def reinitialisation(request):
+    return render(request,"reinitialisation.html")

@@ -22,6 +22,9 @@ from app_name.views import (
         home_page_base,
         Accueil,
         Gestion_utilisateur,
+        Statistique,
+        reinitialisation,
+        Addusers,
         
 )
 
@@ -33,5 +36,8 @@ urlpatterns = [
     path('', home_page_base, name="home"),
     path('Accueil', Accueil, name="Accueil"),
     path('Gestion_utilisateur', Gestion_utilisateur, name="Gestion_utilisateur"),
+    path('Statistique',Statistique, name="Statistique"),
+    path('Addusers',Addusers, name="Addusers"),
+    path('reinitialisation',reinitialisation, name="reinitialisation"),
     
 ]
